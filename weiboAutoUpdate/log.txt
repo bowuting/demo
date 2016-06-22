@@ -1,0 +1,505 @@
+string(123) "https://api.weibo.com/2/statuses/update.json?status=现在是：09点35啦！&access_token=2.00usLX_D0tYeME87ba20160fLsypQE"
+stdClass Object
+(
+    [created_at] => Wed Jun 22 09:35:31 +0800 2016
+    [id] => 3989101319733359
+    [mid] => 3989101319733359
+    [idstr] => 3989101319733359
+    [text] => 现在是：09点35啦！
+    [textLength] => 18
+    [source_allowclick] => 0
+    [source_type] => 1
+    [source] => <a href="http://open.weibo.com" rel="nofollow">未通过审核应用</a>
+    [favorited] => 
+    [truncated] => 
+    [in_reply_to_status_id] => 
+    [in_reply_to_user_id] => 
+    [in_reply_to_screen_name] => 
+    [pic_urls] => Array
+        (
+        )
+
+    [geo] => 
+    [user] => stdClass Object
+        (
+            [id] => 3037059392
+            [idstr] => 3037059392
+            [class] => 1
+            [screen_name] => maxbowuting
+            [name] => maxbowuting
+            [province] => 50
+            [city] => 8
+            [location] => 重庆 南岸区
+            [description] => 为大于其细，为难于其易。
+            [url] => 
+            [profile_image_url] => http://tva1.sinaimg.cn/crop.0.0.640.640.50/b505d940jw8f14mrwtkefj20hs0hsmyc.jpg
+            [profile_url] => 712398922
+            [domain] => 
+            [weihao] => 712398922
+            [gender] => m
+            [followers_count] => 204
+            [friends_count] => 213
+            [pagefriends_count] => 3
+            [statuses_count] => 630
+            [favourites_count] => 22
+            [created_at] => Tue Dec 25 10:58:47 +0800 2012
+            [following] => 
+            [allow_all_act_msg] => 
+            [geo_enabled] => 1
+            [verified] => 
+            [verified_type] => -1
+            [remark] => 
+            [ptype] => 0
+            [allow_all_comment] => 1
+            [avatar_large] => http://tva1.sinaimg.cn/crop.0.0.640.640.180/b505d940jw8f14mrwtkefj20hs0hsmyc.jpg
+            [avatar_hd] => http://tva1.sinaimg.cn/crop.0.0.640.640.1024/b505d940jw8f14mrwtkefj20hs0hsmyc.jpg
+            [verified_reason] => 
+            [verified_trade] => 
+            [verified_reason_url] => 
+            [verified_source] => 
+            [verified_source_url] => 
+            [follow_me] => 
+            [online_status] => 0
+            [bi_followers_count] => 36
+            [lang] => zh-cn
+            [star] => 0
+            [mbtype] => 0
+            [mbrank] => 0
+            [block_word] => 0
+            [block_app] => 0
+            [credit_score] => 80
+            [user_ability] => 0
+            [urank] => 20
+        )
+
+    [reposts_count] => 0
+    [comments_count] => 0
+    [attitudes_count] => 0
+    [isLongText] => 
+    [mlevel] => 0
+    [visible] => stdClass Object
+        (
+            [type] => 0
+            [list_id] => 0
+        )
+
+    [biz_feature] => 0
+    [darwin_tags] => Array
+        (
+        )
+
+    [hot_weibo_tags] => Array
+        (
+        )
+
+    [text_tag_tips] => Array
+        (
+        )
+
+    [userType] => 590081
+    [positive_recom_flag] => 0
+)
+string(123) "https://api.weibo.com/2/statuses/update.json?status=现在是：10点00啦！&access_token=2.00usLX_D0tYeME87ba20160fLsypQE"
+stdClass Object
+(
+    [created_at] => Wed Jun 22 10:00:11 +0800 2016
+    [id] => 3989107530851554
+    [mid] => 3989107530851554
+    [idstr] => 3989107530851554
+    [text] => 现在是：10点00啦！
+    [textLength] => 18
+    [source_allowclick] => 0
+    [source_type] => 1
+    [source] => <a href="http://open.weibo.com" rel="nofollow">未通过审核应用</a>
+    [favorited] => 
+    [truncated] => 
+    [in_reply_to_status_id] => 
+    [in_reply_to_user_id] => 
+    [in_reply_to_screen_name] => 
+    [pic_urls] => Array
+        (
+        )
+
+    [geo] => 
+    [user] => stdClass Object
+        (
+            [id] => 3037059392
+            [idstr] => 3037059392
+            [class] => 1
+            [screen_name] => maxbowuting
+            [name] => maxbowuting
+            [province] => 50
+            [city] => 8
+            [location] => 重庆 南岸区
+            [description] => 为大于其细，为难于其易。
+            [url] => 
+            [profile_image_url] => http://tva1.sinaimg.cn/crop.0.0.640.640.50/b505d940jw8f14mrwtkefj20hs0hsmyc.jpg
+            [profile_url] => 712398922
+            [domain] => 
+            [weihao] => 712398922
+            [gender] => m
+            [followers_count] => 204
+            [friends_count] => 213
+            [pagefriends_count] => 3
+            [statuses_count] => 630
+            [favourites_count] => 22
+            [created_at] => Tue Dec 25 10:58:47 +0800 2012
+            [following] => 
+            [allow_all_act_msg] => 
+            [geo_enabled] => 1
+            [verified] => 
+            [verified_type] => -1
+            [remark] => 
+            [ptype] => 0
+            [allow_all_comment] => 1
+            [avatar_large] => http://tva1.sinaimg.cn/crop.0.0.640.640.180/b505d940jw8f14mrwtkefj20hs0hsmyc.jpg
+            [avatar_hd] => http://tva1.sinaimg.cn/crop.0.0.640.640.1024/b505d940jw8f14mrwtkefj20hs0hsmyc.jpg
+            [verified_reason] => 
+            [verified_trade] => 
+            [verified_reason_url] => 
+            [verified_source] => 
+            [verified_source_url] => 
+            [follow_me] => 
+            [online_status] => 0
+            [bi_followers_count] => 36
+            [lang] => zh-cn
+            [star] => 0
+            [mbtype] => 0
+            [mbrank] => 0
+            [block_word] => 0
+            [block_app] => 0
+            [credit_score] => 80
+            [user_ability] => 0
+            [urank] => 20
+        )
+
+    [reposts_count] => 0
+    [comments_count] => 0
+    [attitudes_count] => 0
+    [isLongText] => 
+    [mlevel] => 0
+    [visible] => stdClass Object
+        (
+            [type] => 0
+            [list_id] => 0
+        )
+
+    [biz_feature] => 0
+    [darwin_tags] => Array
+        (
+        )
+
+    [hot_weibo_tags] => Array
+        (
+        )
+
+    [text_tag_tips] => Array
+        (
+        )
+
+    [userType] => 590081
+    [positive_recom_flag] => 0
+)
+string(123) "https://api.weibo.com/2/statuses/update.json?status=现在是：11点00啦！&access_token=2.00usLX_D0tYeME87ba20160fLsypQE"
+stdClass Object
+(
+    [created_at] => Wed Jun 22 11:00:11 +0800 2016
+    [id] => 3989122626722288
+    [mid] => 3989122626722288
+    [idstr] => 3989122626722288
+    [text] => 现在是：11点00啦！
+    [textLength] => 18
+    [source_allowclick] => 0
+    [source_type] => 1
+    [source] => <a href="http://open.weibo.com" rel="nofollow">未通过审核应用</a>
+    [favorited] => 
+    [truncated] => 
+    [in_reply_to_status_id] => 
+    [in_reply_to_user_id] => 
+    [in_reply_to_screen_name] => 
+    [pic_urls] => Array
+        (
+        )
+
+    [geo] => 
+    [user] => stdClass Object
+        (
+            [id] => 3037059392
+            [idstr] => 3037059392
+            [class] => 1
+            [screen_name] => maxbowuting
+            [name] => maxbowuting
+            [province] => 50
+            [city] => 8
+            [location] => 重庆 南岸区
+            [description] => 为大于其细，为难于其易。
+            [url] => 
+            [profile_image_url] => http://tva1.sinaimg.cn/crop.0.0.640.640.50/b505d940jw8f14mrwtkefj20hs0hsmyc.jpg
+            [profile_url] => 712398922
+            [domain] => 
+            [weihao] => 712398922
+            [gender] => m
+            [followers_count] => 204
+            [friends_count] => 213
+            [pagefriends_count] => 3
+            [statuses_count] => 630
+            [favourites_count] => 22
+            [created_at] => Tue Dec 25 10:58:47 +0800 2012
+            [following] => 
+            [allow_all_act_msg] => 
+            [geo_enabled] => 1
+            [verified] => 
+            [verified_type] => -1
+            [remark] => 
+            [ptype] => 0
+            [allow_all_comment] => 1
+            [avatar_large] => http://tva1.sinaimg.cn/crop.0.0.640.640.180/b505d940jw8f14mrwtkefj20hs0hsmyc.jpg
+            [avatar_hd] => http://tva1.sinaimg.cn/crop.0.0.640.640.1024/b505d940jw8f14mrwtkefj20hs0hsmyc.jpg
+            [verified_reason] => 
+            [verified_trade] => 
+            [verified_reason_url] => 
+            [verified_source] => 
+            [verified_source_url] => 
+            [follow_me] => 
+            [online_status] => 0
+            [bi_followers_count] => 36
+            [lang] => zh-cn
+            [star] => 0
+            [mbtype] => 0
+            [mbrank] => 0
+            [block_word] => 0
+            [block_app] => 0
+            [credit_score] => 80
+            [user_ability] => 0
+            [urank] => 20
+        )
+
+    [reposts_count] => 0
+    [comments_count] => 0
+    [attitudes_count] => 0
+    [isLongText] => 
+    [mlevel] => 0
+    [visible] => stdClass Object
+        (
+            [type] => 0
+            [list_id] => 0
+        )
+
+    [biz_feature] => 0
+    [darwin_tags] => Array
+        (
+        )
+
+    [hot_weibo_tags] => Array
+        (
+        )
+
+    [text_tag_tips] => Array
+        (
+        )
+
+    [userType] => 590081
+    [positive_recom_flag] => 0
+)
+string(123) "https://api.weibo.com/2/statuses/update.json?status=现在是：12点00啦！&access_token=2.00usLX_D0tYeME87ba20160fLsypQE"
+stdClass Object
+(
+    [created_at] => Wed Jun 22 12:00:11 +0800 2016
+    [id] => 3989137726289938
+    [mid] => 3989137726289938
+    [idstr] => 3989137726289938
+    [text] => 现在是：12点00啦！
+    [textLength] => 18
+    [source_allowclick] => 0
+    [source_type] => 1
+    [source] => <a href="http://open.weibo.com" rel="nofollow">未通过审核应用</a>
+    [favorited] => 
+    [truncated] => 
+    [in_reply_to_status_id] => 
+    [in_reply_to_user_id] => 
+    [in_reply_to_screen_name] => 
+    [pic_urls] => Array
+        (
+        )
+
+    [geo] => 
+    [user] => stdClass Object
+        (
+            [id] => 3037059392
+            [idstr] => 3037059392
+            [class] => 1
+            [screen_name] => maxbowuting
+            [name] => maxbowuting
+            [province] => 50
+            [city] => 8
+            [location] => 重庆 南岸区
+            [description] => 为大于其细，为难于其易。
+            [url] => 
+            [profile_image_url] => http://tva1.sinaimg.cn/crop.0.0.640.640.50/b505d940jw8f14mrwtkefj20hs0hsmyc.jpg
+            [profile_url] => 712398922
+            [domain] => 
+            [weihao] => 712398922
+            [gender] => m
+            [followers_count] => 204
+            [friends_count] => 213
+            [pagefriends_count] => 3
+            [statuses_count] => 630
+            [favourites_count] => 22
+            [created_at] => Tue Dec 25 10:58:47 +0800 2012
+            [following] => 
+            [allow_all_act_msg] => 
+            [geo_enabled] => 1
+            [verified] => 
+            [verified_type] => -1
+            [remark] => 
+            [ptype] => 0
+            [allow_all_comment] => 1
+            [avatar_large] => http://tva1.sinaimg.cn/crop.0.0.640.640.180/b505d940jw8f14mrwtkefj20hs0hsmyc.jpg
+            [avatar_hd] => http://tva1.sinaimg.cn/crop.0.0.640.640.1024/b505d940jw8f14mrwtkefj20hs0hsmyc.jpg
+            [verified_reason] => 
+            [verified_trade] => 
+            [verified_reason_url] => 
+            [verified_source] => 
+            [verified_source_url] => 
+            [follow_me] => 
+            [online_status] => 0
+            [bi_followers_count] => 36
+            [lang] => zh-cn
+            [star] => 0
+            [mbtype] => 0
+            [mbrank] => 0
+            [block_word] => 0
+            [block_app] => 0
+            [credit_score] => 80
+            [user_ability] => 0
+            [urank] => 20
+        )
+
+    [reposts_count] => 0
+    [comments_count] => 0
+    [attitudes_count] => 0
+    [isLongText] => 
+    [mlevel] => 0
+    [visible] => stdClass Object
+        (
+            [type] => 0
+            [list_id] => 0
+        )
+
+    [biz_feature] => 0
+    [darwin_tags] => Array
+        (
+        )
+
+    [hot_weibo_tags] => Array
+        (
+        )
+
+    [text_tag_tips] => Array
+        (
+        )
+
+    [userType] => 590081
+    [positive_recom_flag] => 0
+)
+string(123) "https://api.weibo.com/2/statuses/update.json?status=现在是：01点00啦！&access_token=2.00usLX_D0tYeME87ba20160fLsypQE"
+stdClass Object
+(
+    [created_at] => Wed Jun 22 13:00:17 +0800 2016
+    [id] => 3989152851178645
+    [mid] => 3989152851178645
+    [idstr] => 3989152851178645
+    [text] => 现在是：01点00啦！
+    [textLength] => 18
+    [source_allowclick] => 0
+    [source_type] => 1
+    [source] => <a href="http://open.weibo.com" rel="nofollow">未通过审核应用</a>
+    [favorited] => 
+    [truncated] => 
+    [in_reply_to_status_id] => 
+    [in_reply_to_user_id] => 
+    [in_reply_to_screen_name] => 
+    [pic_urls] => Array
+        (
+        )
+
+    [geo] => 
+    [user] => stdClass Object
+        (
+            [id] => 3037059392
+            [idstr] => 3037059392
+            [class] => 1
+            [screen_name] => maxbowuting
+            [name] => maxbowuting
+            [province] => 50
+            [city] => 8
+            [location] => 重庆 南岸区
+            [description] => 为大于其细，为难于其易。
+            [url] => 
+            [profile_image_url] => http://tva1.sinaimg.cn/crop.0.0.640.640.50/b505d940jw8f14mrwtkefj20hs0hsmyc.jpg
+            [profile_url] => 712398922
+            [domain] => 
+            [weihao] => 712398922
+            [gender] => m
+            [followers_count] => 204
+            [friends_count] => 213
+            [pagefriends_count] => 3
+            [statuses_count] => 630
+            [favourites_count] => 22
+            [created_at] => Tue Dec 25 10:58:47 +0800 2012
+            [following] => 
+            [allow_all_act_msg] => 
+            [geo_enabled] => 1
+            [verified] => 
+            [verified_type] => -1
+            [remark] => 
+            [ptype] => 0
+            [allow_all_comment] => 1
+            [avatar_large] => http://tva1.sinaimg.cn/crop.0.0.640.640.180/b505d940jw8f14mrwtkefj20hs0hsmyc.jpg
+            [avatar_hd] => http://tva1.sinaimg.cn/crop.0.0.640.640.1024/b505d940jw8f14mrwtkefj20hs0hsmyc.jpg
+            [verified_reason] => 
+            [verified_trade] => 
+            [verified_reason_url] => 
+            [verified_source] => 
+            [verified_source_url] => 
+            [follow_me] => 
+            [online_status] => 0
+            [bi_followers_count] => 36
+            [lang] => zh-cn
+            [star] => 0
+            [mbtype] => 0
+            [mbrank] => 0
+            [block_word] => 0
+            [block_app] => 0
+            [credit_score] => 80
+            [user_ability] => 0
+            [urank] => 20
+        )
+
+    [reposts_count] => 0
+    [comments_count] => 0
+    [attitudes_count] => 0
+    [isLongText] => 
+    [mlevel] => 0
+    [visible] => stdClass Object
+        (
+            [type] => 0
+            [list_id] => 0
+        )
+
+    [biz_feature] => 0
+    [darwin_tags] => Array
+        (
+        )
+
+    [hot_weibo_tags] => Array
+        (
+        )
+
+    [text_tag_tips] => Array
+        (
+        )
+
+    [userType] => 590081
+    [positive_recom_flag] => 0
+)
