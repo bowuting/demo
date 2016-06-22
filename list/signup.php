@@ -39,6 +39,7 @@
             $result = $db->query($query);
             if($result){
               $_SESSION['id'] = $db->insert_id;
+             // echo($db->insert_id);
               require_once('list.php');
             } else {
               echo "注册失败";

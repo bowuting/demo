@@ -1,6 +1,6 @@
 table{
   border-collapse: collapse;
-  width: 90%;
+  width: 80%;
   margin: auto;
   font-family: helvetica;
 }
@@ -8,7 +8,7 @@ td{
   padding: 5px;
 }
 table, th, td{
-  border: 1px solid red;
+  border: 1px solid blue;
 }
 tr:nth-child(odd){
   background-color: #aedaf6;
@@ -26,7 +26,7 @@ table>caption{
 
 form{
   margin: auto;
-  width: 90%;
+  width: 80%;
   background: #aedaf6;
   font-family: helvetica;
   border-radius: 5px;

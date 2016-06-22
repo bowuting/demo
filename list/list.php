@@ -8,11 +8,10 @@
 
 <?php
   @session_start();
-  if(isset($_SESSION['id'])){
+
     $current_userid = $_SESSION['id'];
 
     $query = "select id,title,description,complete_by,complete_on from items where user_id = $current_userid";
-
     $db = new mysqli('localhost','root','root','list');
     $db->set_charset('utf8');
     if ($db->connect_errno) {
@@ -125,9 +124,6 @@
 
 
     echo "<a href='signout.php'>退出</a>";
-  } else {
-    echo "<a href = 'index.php'>在这里注册</a>";
-  }
-
+  
 ?>
 </html>

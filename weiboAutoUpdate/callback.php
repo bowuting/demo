@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< HEAD
 function curlGET($url,$header=array()){
     //初始化
     $curl = curl_init();
@@ -18,6 +19,8 @@ function curlGET($url,$header=array()){
     //显示获得的数据
   	//return $data;
 }
+=======
+>>>>>>> 53c65ba32c0501cce372b4060619f17ef36816d2
 function curlPost($url,$postData){
 
 	$ch = curl_init();
@@ -47,6 +50,7 @@ function updateWeibo($status){
 	print_r(json_decode($res));
 
 }
+<<<<<<< HEAD
 $url = "http://api.yeelink.net/v1.0/device/349024/sensor/390744/datapoint/";
 $apiKey[] = "U-ApiKey: a1c88bbe78cd1b9d25da4ec25e650ff4";
 
@@ -63,6 +67,17 @@ $apiKey[] = "U-ApiKey: a1c88bbe78cd1b9d25da4ec25e650ff4";
 	}
 
      }
+=======
+
+	$str = "现在是：" . date('h',time()) . "点" . date('i',time()) . "啦！";
+var_dump(date('i',time()));
+
+	if (date('i',time()) == '25') {
+			updateWeibo($str);
+	}
+
+
+>>>>>>> 53c65ba32c0501cce372b4060619f17ef36816d2
 
 
 ?>
