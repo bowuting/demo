@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head lang="cn">
+
+    <include file="./Public/HomeCommon/head.html" />
+
+</head>
+<body>
+
+
+
+<div class="ui container">
+
+    <include file="./Public/HomeCommon/nav.html" />
+    <div class="ui grid">
+
+      <div class="five wide column">
+
+      </div>
+        <div class="six wide column">
+
+          <div class="ui middle aligned center aligned grid" style="margin-top:50%;">
+            <div class="column">
+              <h2 class="ui teal  header">
+                <div class="content">
+                  请登录
+                </div>
+              </h2>
+              <form class="ui large form" action="__URL__/signinProcess" method="post">
+                <div class="ui stacked segment">
+                  <div class="field">
+                    <div class="ui left icon input">
+                      <i class="user icon"></i>
+                      <input type="text" name="phone" placeholder="手机" data-rule="手机号码: required;" >
+                    </div>
+                  </div>
+                  <div class="field">
+                    <div class="ui left icon input">
+                      <i class="lock icon"></i>
+                      <input type="password" name="passwd" placeholder="密码" data-rule="密码: required;" >
+                    </div>
+                  </div>
+                  <input id="submit" type="submit" class="ui fluid large teal submit button" name="" value="登录">
+
+                </div>
+
+                <div class="ui error message"></div>
+
+              </form>
+
+              <div class="ui message">
+                <p>还没有账号密码? <a href="__APP__/Login/Index/registerFirst">立即注册</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="five wide column">
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+
+<include file="./Public/HomeCommon/js.html" />
+<script type="text/javascript">
+
+$(document).ready(function(){
+    $('#submit').click(function() {
+
+
+
+    });
+
+
+
+
+
+});
+
+
+
+
+
+
+
+</script>
+
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head lang="cn">
+
+    <include file="./Public/HomeCommon/head.html" />
+    <title>订单结算页</title>
+</head>
+
+<body>
+
+  <div class="ui container">
+    <include file="./Public/HomeCommon/nav.html" />
+
+    <div class="ui grid">
+
+        <div class="sixteen wide column">
+
+          <h2>订单结算页</h2>
+
+          <form class="" action="__URL__/orderProcess" method="post">
+
+
+              <volist name="addrs" id='addrone'>
+                <div>
+                  <span data-addr-id="{$addrone.addr_id}" data-click="0" class="ppp" style="border:1px solid;width:200px">{$addrone.addr_name} {$addrone.addr_city}</span>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <span> {$addrone.addr_name} </span>
+                  <span> {$addrone.addr_phone}</span>
+                  <span> {$addrone.addr_content}</span>
+                </div>
+              </volist>
+
+              <input id="addrname" type="hidden" name="addr_name" value="">
+              <input id="addrphone" type="hidden" name="addr_phone" value="">
+              <input id="addrcontent" type="hidden" name="addr_content" value="">
+
+              <table class="ui celled table">
+
+                <thead>
+                  <tr>
+                    <th>名称</th>
+                    <th>图片</th>
+                    <th>单价</th>
+                    <th>数量</th>
+                  </tr>
+                </thead>
+
+                <volist name="res" id='vo'>
+                  <input type="hidden" name="gidsStr" value="{$gidsStr}">
+                  <tr>
+                      <td>{$vo.goods_name}</td>
+                      <td><img width="50px" height="50px"src="{$vo.goods_pic}" alt="" /></td>
+                      <td>{$vo[goods_price]/100}</td>
+                      <td>{$vo.mycart_quantity}</td>
+                  </tr>
+                </volist>
+
+              </table>
+
+              <input type="hidden" name="allPrice" value="{$allPrice}">
+              <span>总价：{$allPrice/100}</span>
+              <input type="submit" id="submit" value="结算"  >
+
+          </form>
+
+        </div>  <!--end sixteen wide column -->
+
+    </div>  <!--end ui grid -->
+
+  </div> <!--end ui container -->
+
+</body>
+
+<include file="./Public/HomeCommon/js.html" />
+
+<script type="text/javascript">
+
+  $(document).ready(function(){       //选取地址
+
+      $('.ppp').click(function() {
+
+      $('.ppp').css('background-color','white');
+      $('.ppp').attr('data-click','0');
+
+      $(this).css('background-color','red');
+      $(this).attr('data-click','1')
+
+      var name    = $(this).next().text();
+      var phone   = $(this).next().next().text();
+      var content = $(this).next().next().next().text();
+
+      $('#addrname').val(name);
+      $('#addrphone').val(phone);
+      $('#addrcontent').val(content);
+
+    });
+
+    $('#submit').click(function(){       //判断有没有选择收货地址
+      var count = 0;
+        $('.ppp').each(function() {
+           count += parseInt($(this).attr('data-click'));
+        });
+        if (count != 1) {
+          layer.alert('您还没有选择收获地址呢');
+          return false;
+        }
+    });
+
+  });
+
+
+
+
+
+</script>
+
+</html>

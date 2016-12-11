@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head lang="cn">
+
+    <include file="./Public/HomeCommon/head.html" />
+
+</head>
+<body>
+
+
+<div class="ui container">
+    <include file="./Public/HomeCommon/nav.html" />
+
+    <div class="ui grid">
+        <div class="sixteen wide column" >
+
+          <form class="" action="__URL__/order" method="post">
+              <table class="ui celled table">
+
+                  <thead>
+                    <tr>
+                      <th><input type="checkbox" class="checkbox-all" > 全选</th>
+                      <th>名称</th>
+                      <th>图片</th>
+                      <th>单价</th>
+                      <th>数量</th>
+                      <th>小计</th>
+                    </tr>
+                  </thead>
+
+                  <volist name="list" id="vo">
+                    <tr>
+                      <td>
+                        <input type="checkbox" class="checkbox-one" data-check-one="{$vo.goods_id}" name="check[]" value="{$vo.goods_id}">
+                        <!-- 这里需要传一个数组过去 -->
+                      </td>
+                      <td>
+                        {$vo.goods_name}
+                      </td>
+                      <td>
+                        <img width="50px" height="50px" src="{$vo.goods_pic}" alt="" />
+                      </td>
+                      <td>
+                        <p data-onePrice="{$vo.goods_id}" >{$vo['goods_price']/100}</p>
+                      </td>
+                      <td>
+                        <button class="reduce" data-reduce="{$vo.goods_id}" type="button"  >-</button>
+                        <span data-quantity="{$vo.goods_id}" style="width:30px" > {$vo['mycart_quantity']} </span>
+                        <button class="add" data-add="{$vo.goods_id}" type="button"  >+</button>
+                      </td>
+                      <td>
+                        <p data-subtotal="{$vo.goods_id}" class="price"> {$vo['goods_price']/100*$vo['mycart_quantity']} </p>
+                      </td>
+                    </tr>
+                  </volist>
+
+                  <tr>
+                    <td colspan="6">
+                      <span style="float: right"> 总价：<span  id="all-price" >0</span>元
+                      </span>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td colspan="6">
+                      <span style="float: right">
+                        <input id="submit" type="submit"  value="结算submit">
+                      </span>
+                    </td>
+                  </tr>
+
+              </table>
+
+          </form>
+
+        </div>
+    </div>
+
+</div>
+
+</body>
+
+<include file="./Public/HomeCommon/js.html" />
+<script type="text/javascript">
+$(document).ready(function(){
+
+      $(".add").click(function(){    //点击加按钮
+          var goodsid = $(this).attr('data-add');
+          sub('add',goodsid);
+          getAllPrice();
+
+      });
+
+      $(".reduce").click(function(){  //点击减少按钮
+          var goodsid = $(this).attr('data-reduce');
+          sub('reduce',goodsid);
+          getAllPrice();
+
+      });
+
+
+      $(".checkbox-all").click(function(){   //点击全选按钮
+
+          if($(this).is(':checked')){
+              $(".checkbox-one").prop("checked", true);
+          } else {
+              $(".checkbox-one").prop("checked", false);
+          }
+          getAllPrice();
+
+        });
+
+        $(".checkbox-one").click(function(){     //点击单个物品单选时候  判断是否全部选中  如果有其中一个没有选中   则将全部选中的取消
+
+              var oneCheckIfAllTrue = false;
+              $(".checkbox-one").each(function () {
+                  oneCheckIfAllTrue =  $(this).is(':checked') && oneCheckIfAllTrue;
+              });
+
+              if (!oneCheckIfAllTrue) {
+                $('.checkbox-all').prop("checked", false);
+              }
+              getAllPrice();
+
+          });
+
+
+          $('#submit').click(function() {    //点击提交按钮
+
+            var isCheck = false;
+            $(".checkbox-one").each(function () {
+                isCheck =  $(this).is(':checked') || isCheck;
+            });
+
+            if (!isCheck) {
+              layer.alert('请至少选一件商品~');
+              return false;
+            }
+          });
+
+
+
+          function getAllPrice() {   //计算总价并更新总价
+
+            var allPrice = 0;
+
+            $(".checkbox-one").each(function() {
+
+              if($(this).is(':checked')){
+
+                  var goodsid = $(this).attr('data-check-one');    //得到点击了的id
+                  var subtotalPrice =  parseInt($('[data-subtotal="'+ goodsid + '"]').text());
+
+                  allPrice += subtotalPrice;
+                }
+              });
+              console.log(allPrice);
+
+              $('#all-price').text(allPrice);
+          }
+
+
+
+            function sub(con,goodsid){     //单个物品加减 计算单个物品总价并更新  还有ajax请求 更新数据库
+
+                var onePrice =  parseInt($('[data-onePrice="'+ goodsid + '"]').text());
+                var quantity = parseInt($('[data-quantity="'+ goodsid + '"]').text());
+                var subtotal = 0;
+
+                if (con == 'add') {
+                        //点击增加按钮
+                        $.post("__URL__/addshopcart",
+                          {
+                            goodsid:goodsid,
+                            num:quantity + 1,
+                          },
+                          function (data,status) {
+
+                            if (data == 1) {
+                                quantity += 1;
+                                subtotal = quantity * onePrice;
+
+                                $('[data-quantity="'+ goodsid + '"]').text(quantity);
+                                $('[data-subtotal="'+ goodsid + '"]').text(subtotal);
+                                getAllPrice();
+                            } else {
+                              layer.alert('稍后再试~');
+                            }
+                          });
+
+                } else {
+                      //点击减少按钮
+                      if (quantity <= 1) {
+                        layer.alert('不能再减了~');
+                        return false;
+                      }
+
+                      $.post("__URL__/addshopcart",
+                        {
+                          goodsid:goodsid,
+                          num:quantity - 1,
+                        },
+                        function (data,status) {
+
+                          if (data == 1) {
+                            quantity -= 1;
+                            subtotal = quantity * onePrice;
+
+                              $('[data-quantity="'+ goodsid + '"]').text(quantity);
+                              $('[data-subtotal="'+ goodsid + '"]').text(subtotal);
+                              getAllPrice();
+                          } else {
+                            layer.alert('添加失败');
+                          }
+                        });
+                      }
+              }
+
+
+
+    });
+
+</script>
+
+</html>

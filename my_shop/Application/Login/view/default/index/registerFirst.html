@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head lang="cn">
+
+    <include file="./Public/HomeCommon/head.html" />
+
+</head>
+<body>
+
+  <div class="ui container">
+
+    <include file="./Public/HomeCommon/nav.html" />
+
+      <div class="ui grid">
+        <div class="five wide column">
+
+        </div>
+
+          <div class="six wide column">
+            <div class="ui middle aligned center aligned grid" style="margin-top:50%;">
+              <div class="column">
+                <form class="ui large form" action="__URL__/registerSecond" method="post">
+                  <div class="ui stacked segment">
+
+                    <div class="field">
+                      <div class="ui left icon input">
+                        <i class="phone icon"></i>
+                        <input type="text" name="phone" placeholder="手机号码"
+                        data-ok=''
+                        data-rule-phone="[/^1[3-9]\d{9}$/, '请输入正确的手机号码']"
+                        data-rule="手机号码: required; phone;remote[post:__URL__/ajaxIsThisPhoneRegistered/, phone];">
+                        <!-- <input type="text" name="phone" placeholder="手机" data-rule="手机号码: required;" > -->
+                      </div>
+                    </div>
+
+                    <div class="field">
+                      <div class="ui left icon input">
+                        <!-- <i class="lock icon"></i> -->
+                        <!-- <input type="password" name="passwd" placeholder="密码" data-rule="密码: required;" > -->
+                        <input type="text" name="verify" placeholder="验证码"
+                        data-ok=''
+                        data-rule="验证码: required; remote[post:__URL__/ajaxCheckVerify/, verify];">
+                      </div>
+                    </div>
+
+                    <div class="class="field"">
+                      <img id="verify" src="{:U('Login/Index/verify')}" alt="verify_code"  onclick="fleshVerify()">
+                      <span class="ui content">点击图片更换验证码</span>
+                    </div>
+
+                    <br>
+                    <input id="submit" type="submit" class="ui fluid large teal submit button" name="" value="下一步">
+
+                  </div>
+
+                  <div class="ui error message"></div>
+
+                </form>
+
+                <div class="ui message">
+                  <p>已有账号? <a href="__APP__/Login/Index/signin">立即登录</a></p>
+                </div>
+
+              </div>
+            </div>
+          </div><!-- end six wide column -->
+
+          <div class="five wide column">
+
+          </div>
+
+      </div><!-- end ui grid -->
+
+  </div><!-- end ui container -->
+
+</body>
+
+<include file="./Public/HomeCommon/js.html" />
+
+<script type="text/javascript">
+function fleshVerify(){
+ var time = new Date().getTime();
+    document.getElementById('verify').src= '{:U("Login/Index/verify/' + time + '")}';
+    //其实相当于刷新页面  但是浏览器机制决定URL不一样 才会刷新
+}
+</script>
+</html>
