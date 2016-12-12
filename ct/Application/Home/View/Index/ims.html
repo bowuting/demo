@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <title>彭小华</title>
+    <include file="./Public/common/com.html" />
+
+  </head>
+  <body id="body">
+        <div class="container">
+
+
+          <div class="row">
+            <!-- 顶部灰色 -->
+            <include file="./Public/homecommon/head.html" />
+
+            <br>
+            <ul class="nav nav-pills" role="tablist">
+              <li role="presentation" ><a href="http://localhost/mine/94/index.php/Home/Index/index">Home</a></li>
+              <li role="presentation"><a href="http://localhost/mine/94/index.php/Home/Index/news">News</a></li>
+              <li role="presentation"><a href="http://localhost/mine/94/index.php/Home/Index/albums">Albums</a></li>
+              <li role="presentation" class="active"><a href="http://localhost/mine/94/index.php/Home/Index/ims">IMS</a></li>
+            </ul>
+            <br>
+            <div class="col-md-12" >
+                <form class="form-group" action="http://localhost/mine/94/index.php/Home/Index/ims" method="get">
+                  <input type="text" class="form-control" name="stuid" placeholder="输入学号查询" autofocus required>
+                  <br>
+                  <button type="submit" class="btn btn-success">提交</button><br><br>
+                  <a class="btn btn-success" href="http://localhost/mine/94/index.php/Home/Index/ims/stuid/all">查询所有学生</a>
+                </form>
+                <div class="well">
+
+                    <table class="table table-striped">
+                      <tr>
+                        <td>姓名</td>
+                        <td>学号</td>
+                        <td>性别</td>
+                        <td>数学</td>
+                        <td>英语</td>
+                        <td>物理</td>
+                        <td>计算机</td>
+                        <td>心理学</td>
+                        <td>体育</td>
+                        <td>总计</td>
+                      </tr>
+                      <volist name="res" id="vo" empty="没有查到信息！请检查学号">
+                      <tr>
+                        <td>{$vo.stuname}</td>
+                        <td>{$vo.studentid}</td>
+                        <td>
+                          <if condition="$vo.gender == 1">
+                            男
+                          <else />女
+                          </if>
+                        </td>
+                        <td>{$vo.math}</td>
+                        <td>{$vo.english}</td>
+                        <td>{$vo.physics}</td>
+                        <td>{$vo.computer}</td>
+                        <td>{$vo.psychology}</td>
+                        <td>{$vo.sports}</td>
+                        <td>{$vo.total}</td>
+                      </tr>  </volist>
+                    </table>
+
+
+                </div>
+                <div class="well">
+
+
+                  <h3>添加学生信息</h3>
+
+
+                <form class="form-inline" role="form" method="post" action="__URL__/create">
+                  <div class="form-group">
+                    <label class="sr-only" for="exampleInputEmail2">姓名</label>
+                    <input name="name" type="text" class="form-control" id="exampleInputEmail2" placeholder="姓名">
+                  </div>
+                  <div class="form-group">
+                    <div class="input-group">
+                      <!-- <div class="input-group-addon">学号</div> -->
+                      <input name="id"class="form-control" type="email" placeholder="学号">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="sr-only" for="exampleInputPassword2"></label>
+                    <input name="gender"type="text" class="form-control" id="exampleInputPassword2" placeholder="性别">
+                  </div>
+                  <div class="form-group">
+                    <label class="sr-only" for="exampleInputPassword2"></label>
+                    <input name="math"type="text" class="form-control" id="exampleInputPassword2" placeholder="数学">
+                  </div>
+                  <div class="form-group">
+                    <label class="sr-only" for="exampleInputPassword2"></label>
+                    <input name="english"type="text" class="form-control" id="exampleInputPassword2" placeholder="英语">
+                  </div>
+                  <div class="form-group">
+                    <label class="sr-only" for="exampleInputPassword2"></label>
+                    <input name="physics" type="text" class="form-control" id="exampleInputPassword2" placeholder="物理">
+                  </div>
+                  <div class="form-group">
+                    <label class="sr-only" for="exampleInputPassword2"></label>
+                    <input name="computer" type="text" class="form-control" id="exampleInputPassword2" placeholder="计算机">
+                  </div>
+                  <div class="form-group">
+                    <label class="sr-only" for="exampleInputPassword2"></label>
+                    <input name="psychology" type="text" class="form-control" id="exampleInputPassword2" placeholder="心理学">
+                  </div>
+                  <div class="form-group">
+                    <label class="sr-only" for="exampleInputPassword2"></label>
+                    <input name="sports" type="text" class="form-control" id="exampleInputPassword2" placeholder="体育">
+                  </div>
+
+                  <button type="submit" class="btn btn-default">提交</button>
+                </form>
+                </div>
+            </div>
+
+            <!-- <include file="./Public/homecommon/footer.html" /> -->
+          </div><!-- /row -->
+
+        </div> <!-- /container -->
+
+  </body>
+  <include file="./Public/common/js.html" />
+  <include file="./Public/homecommon/cat.js.html" />
+
+  <script type="text/javascript">
+
+
+
+      $(document).ready(function(){
+
+
+
+
+      });
+
+
+
+
+  </script>
+</html>

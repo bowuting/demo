@@ -1,0 +1,106 @@
+use bool
+set names utf8
+use bool
+set names utf8
+use bool
+set names utf8
+use kechuang
+set names utf8
+use kechuang
+set names utf8
+use kechuang
+set names utf8
+use kechuang
+set names utf8
+use kechuang
+set names utf8
+insert into zhaoxin (name,stuid,xueyuan,zhuanye,tel,is_ganshi) values ('ee','wq','通信','ee','23','0')
+use kechuang
+set names utf8
+insert into zhaoxin (name,stuid,xueyuan,zhuanye,tel,is_ganshi) values ('ee','wq','通信','ee','23','0')
+use kechuang
+set names utf8
+insert into zhaoxin (name,stuid,xueyuan,zhuanye,tel,is_ganshi) values ('丁博武','2012213416','其他','数学与应用数学','18883284586','1')
+use kechuang
+set names utf8
+insert into zhaoxin (name,stuid,xueyuan,zhuanye,tel,is_ganshi) values ('丁博武','2012','其他','数学与应用数学\'','18883284586','1')
+use kechuang
+set names utf8
+insert into zhaoxin (name,stuid,xueyuan,zhuanye,tel,is_ganshi) values ('丁博武','2012','光电','数学与应用数学\'','18883284586','1')
+use kechuang
+set names utf8
+insert into zhaoxin (name,stuid,xueyuan,zhuanye,tel,is_ganshi) values ('丁博武','20122','光电','数学与应用数学\'','18883284586','1')
+use kechuang
+set names utf8
+insert into zhaoxin (name,stuid,xueyuan,zhuanye,tel,is_ganshi) values ('丁博武','20122','光电','数学与应用数学\'','18883284586','1')
+use kechuang
+set names utf8
+insert into zhaoxin (name,stuid,xueyuan,zhuanye,tel,is_ganshi) values ('丁博武','2222','光电','数学与应用数学\'','18883284586','1')
+use kechuang
+set names utf8
+insert into zhaoxin (name,stuid,xueyuan,zhuanye,tel,is_ganshi) values ('丁博武','22223w233','光电','数学与应用数学\'','18883284586','1')
+set names utf8
+insert into zhaoxin (name,stuid,xueyuan,zhuanye,tel,is_ganshi) values ('丁博武','22223w233','光电','数学与应用数学\'','18883284586','1')
+set names utf8
+insert into zhaoxin (name,stuid,xueyuan,zhuanye,tel,is_ganshi) values ('丁博武','22223w233e','光电','数学与应用数学\'','18883284586','1')
+insert into zhaoxin (name,stuid,xueyuan,zhuanye,tel,is_ganshi) values ('丁博武','2322e2','光电','数学与应用数学','18883284586','1')
+insert into zhaoxin (name,stuid,xueyuan,zhuanye,tel,is_ganshi) values ('丁博武','2323222','光电','数学与应用数学\'','18883284586','1')
+insert into zhaoxin (name,stuid,xueyuan,zhuanye,tel,is_ganshi) values ('丁博武','11','光电','数学与应用数学\'','18883284586','1')
+insert into zhaoxin (name,stuid,xueyuan,zhuanye,tel,is_ganshi) values ('丁博武','11223','光电','数学与应用数学\'','18883284586','1')
+insert into zhaoxin (name,stuid,xueyuan,zhuanye,tel,is_ganshi) values ('丁博武','11223','光电','数学与应用数学\'','18883284586','1')
+insert into zhaoxin (name,stuid,xueyuan,zhuanye,tel,is_ganshi) values ('丁博武','11223','光电','数学与应用数学\'','18883284586','1')
+insert into zhaoxin (name,stuid,xueyuan,zhuanye,tel,is_ganshi) values ('丁博武','11223','光电','数学与应用数学\'','18883284586','1')
+insert into zhaoxin (name,stuid,xueyuan,zhuanye,tel,is_ganshi) values ('d','dd','通信','w','22\'','1')
+insert into zhaoxin (name,stuid,xueyuan,zhuanye,tel,is_ganshi) values ('d','dd','通信','w','22\'','1')
+insert into zhaoxin (name,stuid,xueyuan,zhuanye,tel,is_ganshi) values ('d','ddd','通信','w','22\'','1')
+insert into zhaoxin (name,stuid,xueyuan,zhuanye,tel,is_ganshi) values ('d','ddd2','通信','w','22\'','1')
+insert into zhaoxin (name,stuid,xueyuan,zhuanye,tel,is_ganshi) values ('d','ddd2','通信','w','22\'','1')
+insert into zhaoxin (name,stuid,xueyuan,zhuanye,tel,is_ganshi) values ('2','2012213416','通信','2','2','1')
+insert into zhaoxin (name,stuid,xueyuan,zhuanye,tel,is_ganshi) values ('2','2012213416','通信','2','2','1')
+insert into zhaoxin (name,stuid,xueyuan,zhuanye,tel,is_ganshi) values ('丁博武','2012213416','其他','数学与应用数学','18883284586','1')
+insert into zhaoxin (name,stuid,xueyuan,zhuanye,tel,is_ganshi) values ('丁博武','2012213416','其他','数学与应用数学','18883284586','1')
+insert into zhaoxin (name,stuid,xueyuan,zhuanye,tel,is_ganshi) values ('d','2','通信','数学与应用数学','200001','1')
+insert into zhaoxin (name,stuid,xueyuan,zhuanye,tel,is_ganshi) values ('d','2','通信','数学与应用数学','200001','1')
+insert into zhaoxin (name,stuid,xueyuan,zhuanye,tel,is_ganshi) values ('丁博武','2012213416','其他','数学与应用数学','18883284586','1')
+insert into zhaoxin (name,stuid,xueyuan,zhuanye,tel,is_ganshi) values ('丁博武','2012213416','其他','数学与应用数学','18883284586','1')
+insert into zhaoxin (name,stuid,xueyuan,zhuanye,tel,is_ganshi) values ('丁博武','2012213417','通信','数学','1888','1')
+insert into zhaoxin () values ('')
+insert into zhaoxin (name,stuid,xueyuan,zhuanye,tel,is_ganshi) values ('ddd','d','da','ww\'w','dad','1')
+insert into zhaoxin (name,stuid,xueyuan,zhuanye,tel,is_ganshi) values ('dadada','dada','we','ew','wwe','1')
+insert into zhaoxin (name,stuid,xueyuan,zhuanye,tel,is_ganshi) values ('dadada','dada','we','ew','wwe','1')
+insert into zhaoxin (name,stuid,xueyuan,zhuanye,tel,is_ganshi) values ('dw','we','e','1','q','1')
+insert into zhaoxin (name,stuid,xueyuan,zhuanye,tel,is_ganshi) values ('','','','','','1')
+insert into zhaoxin (name,stuid,xueyuan,zhuanye,tel,is_ganshi) values ('','','','','','1')
+insert into zhaoxin (name,stuid,xueyuan,zhuanye) values ('name','201233','通信','323')
+insert into zhaoxin (name,stuid,xueyuan,zhuanye) values ('name','20123323','通信','323')
+insert into zhaoxin (name,stuid,xueyuan,zhuanye) values ('name','20123323','通信','323')
+insert into zhaoxin (name,stuid,xueyuan,zhuanye) values ('name','201233233','通信','323')
+insert into zhaoxin (name,stuid,xueyuan,zhuanye,tel,is_ganshi) values ('wewewewew','weq','通信','23','111111','是')
+insert into zhaoxin (name,stuid,xueyuan,zhuanye,tel,is_ganshi) values ('wewewewew','weq\'2','通信','23','111111','是')
+insert into zhaoxin (name,stuid,xueyuan,zhuanye,tel,is_ganshi) values ('dad','adw','通信','e','e','是')
+insert into zhaoxin (name,stuid,xueyuan,zhuanye,tel,is_ganshi) values ('dad','adw','通信','e','e','是')
+insert into zhaoxin (name,stuid,xueyuan,zhuanye,tel,is_ganshi) values ('dad','adw2','通信','e','e','是')
+insert into zhaoxin (name,stuid,xueyuan,zhuanye,tel,is_ganshi) values ('eweqe','wqeqweqw','通信','ewqeqeqw','q','是')
+insert into zhaoxin (name,stuid,xueyuan,zhuanye,tel,is_ganshi) values ('eweqe','wqeqweqw','通信','ewqeqeqw','q','是')
+insert into zhaoxin (name,stuid,xueyuan,zhuanye,tel,is_ganshi) values ('wewewe','we','通信','we','we','是')
+insert into zhaoxin (name,stuid,xueyuan,zhuanye,tel,is_ganshi) values ('丁博武','2012213','其他','数学与应用数学','18883284586','否')
+insert into zhaoxin (name,stuid,xueyuan,zhuanye,tel,is_ganshi) values ('丁博武','2012213','其他','数学与应用数学','18883284586','否')
+insert into zhaoxin (name,stuid,xueyuan,zhuanye,tel,is_ganshi) values ('丁博武','201221341','理学院','数学','18883284586','否')
+insert into zhaoxin (name,stuid,xueyuan,zhuanye,tel,is_ganshi) values ('丁博武','666','理学院','李雪','100','是')
+insert into zhaoxin (name,stuid,xueyuan,zhuanye,tel,is_ganshi) values ('丁博武','2012213416','理学院','数学与应用数学','18883284586','是')
+insert into zhaoxin (name,stuid,xueyuan,zhuanye,tel,is_ganshi) values ('丁博武','2012213417','理学院','数学与应用数学','18883284586','是')
+insert into zhaoxin (name,stuid,xueyuan,zhuanye,tel,is_ganshi) values ('蓦然','2015','自动化','自动化','18875144242','是')
+insert into zhaoxin (name,stuid,xueyuan,zhuanye,tel,is_ganshi) values ('丁博武','2012213416','理学院','数学','18883284586','是')
+insert into zhaoxin (name,stuid,xueyuan,zhuanye,tel,is_ganshi) values ('丁博武','20122134162','理学院','数学','18883284586','是')
+insert into zhaoxin (name,stuid,xueyuan,zhuanye,tel,is_ganshi) values ('丁博武','20122134162','理学院','数学','18883284586','是')
+insert into zhaoxin (name,stuid,xueyuan,zhuanye,tel,is_ganshi) values ('丁博武','20122134165','理学院','数学','18883284586','是')
+insert into zhaoxin (name,stuid,xueyuan,zhuanye,tel,is_ganshi) values ('擦的','2235','进','提酒','明年','否')
+insert into zhaoxin (name,stuid,xueyuan,zhuanye,tel,is_ganshi) values ('擦的','2235的','进','提酒','明年','否')
+insert into zhaoxin (name,stuid,xueyuan,zhuanye,tel,is_ganshi) values ('恩里克','2254','455','5','8','否')
+insert into zhaoxin (name,stuid,xueyuan,zhuanye,tel,is_ganshi) values ('恩里克','2254侧','455','5','8','否')
+insert into zhaoxin (name,stuid,xueyuan,zhuanye,tel,is_ganshi) values ('恩里克','2254侧の','455','5','8','否')
+insert into zhaoxin (name,stuid,xueyuan,zhuanye,tel,is_ganshi) values ('恩里克','2254侧の额','455','5','8','是')
+insert into zhaoxin (name,stuid,xueyuan,zhuanye,tel,is_ganshi) values ('丁博武','2812213416','理学院','数学','18883284586','是')
+insert into zhaoxin (name,stuid,xueyuan,zhuanye,tel,is_ganshi) values ('丁博武','28122134162','理学院','数学','18883284586','否')
+insert into zhaoxin (name,stuid,xueyuan,zhuanye,tel,is_ganshi) values ('66d的博五个','2012','23','23','— 86ddafw','是')
+insert into zhaoxin (name,stuid,xueyuan,zhuanye,tel,is_ganshi) values ('ewe','ewqeewqeqe','weqwe','ewe','eqweq','是')

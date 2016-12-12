@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <title>首页</title>
+
+    <include file="./Public/common/com.html" />
+    <include file="./Public/homeCommon/sign.html" />
+
+  </head>
+  <body id="body">
+    <div class="container">
+
+      <div class="col-md-4">
+
+      </div>
+
+      <div class="col-md-4">
+        <div  id="main" >
+
+          <form class="form text-center"  role="form" action="__URL__/register" method="post">
+            <h3 class=" text-center">940410</h3>
+            <input name="username" type="text" class="form-control" placeholder="用户名" required autofocus data-rule="用户名:required; username; length[3~]"> <p style="height:3px"></p>
+
+            <input name="passwd"   type="password" class="form-control" placeholder="密码" required data-rule="密码:required; password; length[6~]"> <p style="height:3px"></p>
+
+            <input name="confirm_passwd" type="password" class="form-control" placeholder="重复密码"  required data-rule="重复密码:required; password; length[6~]"> <p style="height:3px"></p>
+
+            <button class="btn  btn-primary btn-block" type="submit">注册</button>
+            <a class="btn  btn-success btn-block"  href="http://localhost/mine/94/index.php/Home/Login/login">已有账号 去登录！</a>
+
+          </form>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+
+      </div>
+
+
+
+
+    </div> <!-- /container -->
+
+  </body>
+  <include file="./Public/common/js.html" />
+   <script type="text/javascript">
+
+    function imgChange(){                                //拼接url 获取随机数 改变背景
+      var urlArr = new Array();
+      var r = Math.ceil(Math.random()*42);
+      var url = "http://file.bowuting.com/index/";
+
+      for (var i = 1; i < 43; i++) {
+          urlArr[i] = url + i + ".jpg";
+      }
+
+      $('#body').css('backgroundImage', "url(" + urlArr[r]+ ")");
+    }
+
+      $(document).ready(function(){
+
+        imgChange();
+
+
+      });
+
+
+
+
+</script>
+</html>

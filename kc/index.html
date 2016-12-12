@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+
+        <title>科创招新</title>
+        <!-- 新 Bootstrap 核心 CSS 文件 -->
+        <link href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+        <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+
+        <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+        <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <style media="screen">
+            *{
+                font-size: 18px;
+
+                line-height: 1.4;
+                font-family: '微软雅黑','黑体',sans-serif;
+            }
+            h1{
+                color: blue;
+                font-family: '微软雅黑','黑体',sans-serif;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <h1 class="text-center">2016年科创招新</h1>
+
+
+        <div class="form-group col-lg-6" >
+		    <input type="text" class="form-control" id="name" placeholder="姓名">
+	    </div>
+
+        <div class="form-group col-lg-6">
+  		        <input type="text" class="form-control" id="stuid" placeholder="学号">
+  	    </div>
+
+        <div class="form-group col-lg-6">
+  		<!-- <label for="xueyuan"></label> -->
+  		<input type="text" class="form-control" id="xueyuan" placeholder="学院">
+  	    </div>
+
+        <div class="form-group col-lg-6">
+  		<!-- <label for="zhuanye"></label> -->
+  		<input type="text" class="form-control" id="zhuanye" placeholder="专业">
+  	    </div>
+
+        <div class="form-group col-lg-6">
+        <!-- <label for="tel"></label> -->
+  		    <input type="text" class="form-control" id="tel" placeholder="电话">
+        </div>
+
+        <div class="form-group col-lg-2">
+  		    <label for="is_ganshi" >是否竞选干事</label>
+        <select class="form-control" id="is_ganshi">
+          <option value="是">是</option>
+          <option value="否">否</option>
+        </select>
+        </div>
+
+            <div style="text-align:center ">
+                    <button class="btn btn-success btn-lg" id="save">注册</button>
+            </div>
+
+            <div style="text-align:center;color:#006600;margin:10px">
+              
+            </div>
+            <div style="text-align:center;color:#006600;margin:10px">
+              <p>
+                如果不能注册 请咨询13101291931 或者 bowuting@qq.com 谢谢
+              </p>
+            </div>
+
+            <div style="text-align:center;color:#aaaaaa;margin:20px">
+              <p>
+                  Copyright (c) 2016 bowuting.com Holder All Rights Reserved. 陕ICP备16001415号-1
+              </p>
+            </div>
+
+
+
+        <script type="text/javascript">
+
+            document.getElementById("save").onclick = function(){
+                //发送ajax查询请求 并 处理
+                var request = new XMLHttpRequest();
+                request.open("POST","server.php");
+                var data = "name=" + document.getElementById("name").value
+                            + "&stuid=" + document.getElementById("stuid").value
+                            + "&xueyuan=" + document.getElementById("xueyuan").value
+                            + "&zhuanye=" + document.getElementById("zhuanye").value
+                            + "&tel=" + document.getElementById("tel").value
+                            + "&is_ganshi=" + document. getElementById("is_ganshi").value;
+                request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+                request.send(data);
+                request.onreadystatechange = function() {
+                    if (request.readyState === 4)
+                    {
+                        if (request.status === 200) {
+
+                            if (request.responseText == "注册成功") {
+                              alert(request.responseText + " 谢谢");
+                            } else if (request.responseText == "注册失败") {
+                              alert(request.responseText + "  请检查学号或者是否填写完整");
+                            }
+                            //document.getElementById("createResule").innerHTML = request.responseText;
+                        } else {
+                            alert("发生错误  " + request.status);
+                        }
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>

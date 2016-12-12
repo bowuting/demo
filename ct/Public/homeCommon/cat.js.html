@@ -1,0 +1,56 @@
+<script type="text/javascript">
+//初始化选中方法 start
+  function init() {
+    var oldvalue = "{$Think.get.cat_id}";
+    var oldvalue2 = "{$Think.get.cat_pid}";
+    if ((oldvalue == "") || (oldvalue2 == "")) {
+        location.href="http://localhost/ruibo/index.php/Home/Index/index/cat_id/1/cat_pid/22";
+    }
+  }
+//初始化选中方法 end
+
+$(document).ready(function(){
+
+  //加载完毕立即初始化
+  init();
+
+  // 点击一级分类 start
+  $(".cat_id").click(function(){
+        var newvalue = $(this).attr("data-id");
+        var oldvalue = "{$Think.get.cat_id}";
+        var json = {$json};
+
+        if (newvalue == 1) {
+          location.href="http://localhost/ruibo/index.php/Home/Index/index/cat_id/1/cat_pid/22";
+
+        } else {
+          location.href="http://localhost/ruibo/index.php/Home/Cat" + newvalue + "/catpid"+json[newvalue-1].toString()
+          + "/cat_id/" + newvalue + "/cat_pid/" + json[newvalue-1].toString();
+        }
+      });
+  // 点击一级分类 end
+
+
+  // 点击二级分类 start
+  $(".cat_pid").click(function(){
+    var newvalue = $(this).attr("data-id");
+    var cat_id = "{$Think.get.cat_id}";
+    var cat_pid = "{$Think.get.cat_pid}";
+
+    if (cat_id == '1') {
+          if (newvalue == "22") {
+            location.href="http://localhost/ruibo/index.php/Home/Index/index/cat_id/1/cat_pid/22";
+          }else {
+            location.href="http://localhost/ruibo/index.php/Home/Index" +"/catpid"+ newvalue+ "/cat_id/1/cat_pid/" + newvalue;
+          }
+    } else {
+      location.href="http://localhost/ruibo/index.php/Home/Cat" + cat_id + "/catpid"+newvalue
+      + "/cat_id/" + cat_id + "/cat_pid/" + newvalue;
+    }
+
+    });
+  // 点击二级分类 end
+
+});   //  $(document).ready(function(){  END
+
+</script>
